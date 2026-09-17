@@ -1,0 +1,6 @@
+node_modules/
+*.tsbuildinfo
+*.tgz
+.DS_Store
+pnpm-lock.yaml
+.sanitize-allow.json

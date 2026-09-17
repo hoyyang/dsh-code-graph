@@ -1,0 +1,18 @@
+# dsh-code-graph bundle patch：把原生代码图工具接入 profile roster。
+# 安装：dsh plugin --profile web add <目录或 tgz>
+# 之后 Agent 可直接调用 codegraph 分发器工具，或用 /codegraph 命令建索引。
+#
+# 配置（可选项，全部有插件侧默认值）：
+#   bin: ~/.local/bin/codebase-memory-mcp   引擎二进制路径
+#   defaultMode: fast   索引默认模式（fast/moderate/full）
+#   fresh: true         查询前保鲜门控
+#   freshThrottleSec: 120   重索引防抖窗口（秒）
+#   maxRows: 50         查询返回行数上限
+#   hint: true          条件系统提示开关
+#   skill: true         skill 文件落盘开关
+- insert:
+    - id: dsh-code-graph
+      name: 'dsh-code-graph'
+      config:
+        defaultMode: fast
+        fresh: true

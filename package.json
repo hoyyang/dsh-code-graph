@@ -1,0 +1,60 @@
+{
+  "name": "dsh-code-graph",
+  "version": "0.2.0",
+  "description": "单入口原生代码图工具：索引/保鲜/分支跟随/符号检索/调用链/影响面/路径/架构，复用本机 codebase-memory 引擎，零 MCP 会话",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "author": "hoyyang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyyang/dsh-code-graph.git"
+  },
+  "homepage": "https://github.com/hoyyang/dsh-code-graph#readme",
+  "bugs": {
+    "url": "https://github.com/hoyyang/dsh-code-graph/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "bash scripts/build.sh"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh-plugin",
+    "code-graph",
+    "call-graph",
+    "branch-aware",
+    "code-index"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1 <5",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.8 <0.2.0",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.8",
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@types/node": "^22.0.0",
+    "typescript": "~5.7.2"
+  }
+}
