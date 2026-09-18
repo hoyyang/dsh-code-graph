@@ -25,7 +25,7 @@ import type { EngineOptions } from './engine.js'
 import { runEngine } from './engine.js'
 import { SKILL_MARKDOWN } from './skill.js'
 
-export const name = 'dsh-code-graph'
+export const name = '@hoyyang/dsh-code-graph'
 export const inject = ['tools', 'commands', 'systemPrompt']
 
 /** 宿主服务面（本地窄类型；effect 收 unknown/清理函数，dsh-concise 实测约定）。 */

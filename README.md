@@ -15,7 +15,7 @@
 dsh plugin add github:hoyyang/dsh-code-graph
 
 # 或 npm
-dsh plugin add dsh-code-graph
+dsh plugin add @hoyyang/dsh-code-graph
 ```
 
 - **零配置可用**：装上即生效，读代码门禁默认开启，无需任何账号或 API Key。

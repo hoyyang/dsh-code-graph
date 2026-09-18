@@ -1,5 +1,5 @@
 {
-  "name": "dsh-code-graph",
+  "name": "@hoyyang/dsh-code-graph",
   "version": "0.2.0",
   "description": "单入口原生代码图工具：索引/保鲜/分支跟随/符号检索/调用链/影响面/路径/架构，复用本机 codebase-memory 引擎，零 MCP 会话",
   "type": "module",

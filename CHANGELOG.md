@@ -9,7 +9,7 @@
 - 查询族操作新增 `branch` 参数（已建索引分支；非检出分支为冻结态不做保鲜）
 - `op=status` 增当前分支/模式/可用分支清单；响应新增 branch/branchMode/adopted/built/switched/evicted/fresh 元数据
 - detached HEAD → `__detached-<sha7>` 命名；非 git 目录与 `branchIndex=false` 回退单索引跟随行为
-- 插件 id 调整：`@dsh-external/dsh-code-graph` → `dsh-code-graph`（npm 可发布形态）
+- 插件 id 调整：`@dsh-external/dsh-code-graph` → `@hoyyang/dsh-code-graph`（npm 防混淆规则禁用无 scope 的 dsh-code-graph，registry 建议形态）
 
 ## 0.1.0 (2026-09-08)
 

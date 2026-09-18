@@ -12,7 +12,7 @@
 #   skill: true         skill 文件落盘开关
 - insert:
     - id: dsh-code-graph
-      name: 'dsh-code-graph'
+      name: '@hoyyang/dsh-code-graph'
       config:
         defaultMode: fast
         fresh: true

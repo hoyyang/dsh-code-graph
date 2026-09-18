@@ -1,5 +1,5 @@
 import z from '@deepseek-ai/schemastery';
-export declare const name = "dsh-code-graph";
+export declare const name = "@hoyyang/dsh-code-graph";
 export declare const inject: string[];
 /** 宿主服务面（本地窄类型；effect 收 unknown/清理函数，dsh-concise 实测约定）。 */
 interface HostCtx {

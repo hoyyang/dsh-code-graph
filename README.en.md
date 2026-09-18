@@ -15,7 +15,7 @@ A pre-indexed code knowledge graph for DSH: your agent stops blind-grepping and 
 dsh plugin add github:hoyyang/dsh-code-graph
 
 # or npm
-dsh plugin add dsh-code-graph
+dsh plugin add @hoyyang/dsh-code-graph
 ```
 
 - **Zero config**: works out of the box; the code-read gate is on by default. No accounts, no API keys.
